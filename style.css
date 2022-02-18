@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --brigh-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-grayish: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 700;
+}
+
+input[type="email"] {
+  width: 60%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: var(--brigh-blue);
+  color: white;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--dark-blue);
+  transition: 1s ease-out;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--dark-blue);
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 70px 0 70px;
+}
+
+.header .logo img {
+  max-width: 130px;
+  height: auto;
+}
+.header nav {
+  margin-left: auto;
+}
+
+.header nav .nav-item .nav-link {
+  display: inline;
+  margin-left: 2.5rem;
+}
+
+header nav .nav-item .nav-link a {
+  color: var(--dark-blue);
+}
+
+header nav .nav-item .nav-link a:hover {
+  color: var(--brigh-blue);
+}
+
+/*main section*/
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.container .card-a {
+  display: grid;
+  grid-template-columns: 43% 55%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 70px 5rem 70px;
+}
+
+/* Card-b component */
+
+.container .card-b {
+  display: grid;
+  grid-template-columns: 44% 45%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 70px 5rem 70px;
+}
+
+.container .card-b .text-green {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-bottom: 1px solid var(--moderate-cyan);
+  max-width: 170px;
+  margin-bottom: 3rem;
+}
+
+.container .card-b .text-green-link {
+  color: var(--moderate-cyan);
+}
+
+.container .card-b .text-green-link:hover {
+  color: rgb(69, 202, 202);
+}
+
+.container .card-b .text-green img {
+  max-width: 16px;
+  height: auto;
+}
+
+.container .card-b .card-sm {
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  box-shadow: rgba(132, 132, 163, 0.1) 0px 4px 16px,
+    rgba(134, 134, 156, 0.05) 0px 8px 32px;
+}
+
+.container .card-b .card-sm:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: 0.5s ease-in;
+}
+
+.card-sm .avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card-sm .avatar img {
+  max-width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card-sm .avatar .text-lg {
+  font-weight: 700;
+}
+
+/* Get access section*/
+.access {
+  background-color: var(--desaturated-blue);
+  display: grid;
+  grid-template-columns: 40% 50%;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 4rem 70px 4rem 70px;
+  color: #fff;
+}
+
+.access input[type="email"] {
+  width: 80%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.access input[type="submit"] {
+  width: 40%;
+  background-color: var(--brigh-blue);
+  color: white;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer section*/
+
+footer {
+  background-color: var(--dark-blue);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 4rem 300px 4rem 70px;
+  align-items: center;
+  text-align: left;
+}
+
+.footer-left {
+  display: block;
+  color: #fff;
+}
+
+.footer-left .footer-logo {
+  max-width: 40%;
+}
+
+.footer-left p {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.footer-right .icon-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-links li .fa-brands {
+  font: normal normal normal 18px/1 FontAwesome;
+  text-rendering: auto;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.footer-item nav ul li a:hover,
+.icon-links li .fa-brands:hover {
+  color: var(--brigh-blue);
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .container .card-a,
+  .container .card-b,
+  .access,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 20px 4rem 20px;
+  }
+
+  /*Header section*/
+  .header {
+    padding: 1em 20px 1rem 20px;
+  }
+
+  .header .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .header nav .nav-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header nav .nav-item .nav-link {
+    margin: 0 auto;
+  }
+
+  .card-a,
+  .card-b h1,
+  .access {
+    text-align: center;
+  }
+  .card-a form input[type="email"],
+  .card-a form input[type="submit"],
+  .access form input[type="email"],
+  .access form input[type="submit"] {
+    width: 90%;
+  }
+
+  footer,
+  .footer-right {
+    display: block;
+    padding: 2rem;
+  }
+
+  .align-left{
+    margin-left: -4.5rem;
+  }
+
+  .text-green{
+    margin: 0 auto;
+  }
+}
