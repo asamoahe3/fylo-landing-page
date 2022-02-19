@@ -30,7 +30,7 @@ img {
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 700;
+  font-weight: 700;
 }
 
 input[type="email"] {
@@ -99,7 +99,6 @@ header nav .nav-item .nav-link a:hover {
 .container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
 
 .container .card-a {
@@ -110,15 +109,29 @@ header nav .nav-item .nav-link a:hover {
   padding: 5rem 70px 5rem 70px;
 }
 
+.container .bg-curve {
+  background-image: url(./images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 5rem;
+  margin-top: 3rem;
+}
+
 /* Card-b component */
 
 .container .card-b {
   display: grid;
-  grid-template-columns: 44% 45%;
+  grid-template-columns: 60% 40%;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
-  padding: 5rem 70px 5rem 70px;
+  gap: 1rem;
+  padding: 0rem 70px 5rem 70px;
+  background-color: var(--light-grayish);
+}
+
+.container .card-b .shift {
+  max-width: 95%;
+  line-break: normal;
 }
 
 .container .card-b .text-green {
@@ -297,17 +310,21 @@ footer {
     width: 90%;
   }
 
+  .bg-curve {
+    background-image: url(./images/bg-curve-mobile.svg);
+  }
+
   footer,
   .footer-right {
     display: block;
     padding: 2rem;
   }
 
-  .align-left{
+  .align-left {
     margin-left: -4.5rem;
   }
 
-  .text-green{
+  .text-green {
     margin: 0 auto;
   }
 }
