@@ -31,6 +31,7 @@ h1,
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  font-size: 2.5rem;
 }
 
 input[type="email"] {
@@ -65,13 +66,13 @@ body {
   color: var(--dark-blue);
   padding: 0;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .header {
   display: flex;
   align-items: center;
-  padding: 1rem 70px 0 70px;
+  padding: 2rem 70px 4rem 70px;
 }
 
 .header .logo img {
@@ -103,10 +104,14 @@ header nav .nav-item .nav-link a:hover {
 
 .container .card-a {
   display: grid;
-  grid-template-columns: 43% 55%;
+  grid-template-columns: 50% 45%;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 70px 5rem 70px;
+  padding: 3rem 70px 5rem 70px;
+}
+
+.container .card-a .fl-medium {
+  max-width: 85%;
 }
 
 .container .bg-curve {
@@ -121,17 +126,16 @@ header nav .nav-item .nav-link a:hover {
 
 .container .card-b {
   display: grid;
-  grid-template-columns: 60% 40%;
-  justify-content: space-between;
+  grid-template-columns: 55% 40%;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0rem 70px 5rem 70px;
   background-color: var(--light-grayish);
 }
 
-.container .card-b .shift {
-  max-width: 95%;
-  line-break: normal;
+.container .card-b .fl-small {
+  max-width: 80%;
+  text-align: left;
 }
 
 .container .card-b .text-green {
@@ -162,14 +166,8 @@ header nav .nav-item .nav-link a:hover {
   border-radius: 10px;
   padding: 1rem 2rem;
   font-size: 14px;
-  box-shadow: rgba(132, 132, 163, 0.1) 0px 4px 16px,
-    rgba(134, 134, 156, 0.05) 0px 8px 32px;
-}
-
-.container .card-b .card-sm:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  transition: 0.5s ease-in;
+  box-shadow: rgba(87, 87, 100, 0.164) 0px 4px 16px,
+    rgba(82, 82, 97, 0.171) 0px 8px 32px;
 }
 
 .card-sm .avatar {
@@ -270,6 +268,14 @@ footer {
 
 /* Mobile devices */
 @media (max-width: 767px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .fs-600 {
+    font-size: 20px;
+  }
+
   .container .card-a,
   .container .card-b,
   .access,
@@ -312,6 +318,15 @@ footer {
 
   .bg-curve {
     background-image: url(./images/bg-curve-mobile.svg);
+  }
+
+  .card-b .card-sm {
+    margin: 0 auto;
+  }
+
+  .container .card-a .fl-medium,
+  .container .card-b .fl-small {
+    max-width: 100%;
   }
 
   footer,
