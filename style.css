@@ -72,7 +72,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 2rem 70px 4rem 70px;
+  padding: 3rem 70px 4rem 70px;
 }
 
 .header .logo img {
@@ -107,7 +107,7 @@ header nav .nav-item .nav-link a:hover {
   grid-template-columns: 50% 45%;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 70px 5rem 70px;
+  padding: 3rem 70px 6rem 70px;
 }
 
 .container .card-a .fl-medium {
@@ -129,7 +129,7 @@ header nav .nav-item .nav-link a:hover {
   grid-template-columns: 55% 40%;
   align-items: center;
   gap: 2rem;
-  padding: 0rem 70px 5rem 70px;
+  padding: 0rem 70px 7rem 70px;
   background-color: var(--light-grayish);
 }
 
@@ -166,8 +166,8 @@ header nav .nav-item .nav-link a:hover {
   border-radius: 10px;
   padding: 0.5rem 2rem;
   font-size: 14px;
-  box-shadow: rgba(87, 87, 100, 0.164) 0px 4px 16px,
-    rgba(82, 82, 97, 0.171) 0px 8px 32px;
+  box-shadow: rgba(156, 156, 172, 0.164) 0px 4px 16px,
+    rgba(139, 139, 163, 0.171) 0px 8px 32px;
 }
 
 .card-b .card-sm .quote {
