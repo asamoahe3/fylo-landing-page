@@ -151,23 +151,32 @@ header nav .nav-item .nav-link a:hover {
   color: var(--moderate-cyan);
 }
 
-.container .card-b .text-green-link:hover {
+.card-b .text-green-link:hover {
   color: rgb(69, 202, 202);
 }
 
-.container .card-b .text-green img {
+.card-b .text-green img {
   max-width: 16px;
   height: auto;
 }
 
-.container .card-b .card-sm {
+.card-b .card-sm {
   max-width: 350px;
   background-color: #fff;
   border-radius: 10px;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 14px;
   box-shadow: rgba(87, 87, 100, 0.164) 0px 4px 16px,
     rgba(82, 82, 97, 0.171) 0px 8px 32px;
+}
+
+.card-b .card-sm .quote {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: -3rem;
+  margin-top: -0.1rem;
 }
 
 .card-sm .avatar {
